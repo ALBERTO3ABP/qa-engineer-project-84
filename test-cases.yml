@@ -1,0 +1,186 @@
+test-cases.yml
+
+---
+- summary: |
+    Поиск товара по ключевому слову
+  requirement: |
+    Пользователь должен иметь возможность искать товары по ключевому слову.
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    iPhone
+  steps:
+    - Вводим в поисковик товаров слово "iPhone"
+  expected-result: |
+    У пользователя должны появиться все товары со словом "iPhone" в название
+
+- summary: |
+    Поиск товара по категории
+  requirement: |
+    Пользователь должен иметь возможность искать товары с помощью категорий.
+  prerequisites:
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  steps:
+    - В разделе "Category" выбрать категорию "smartphones"
+  expected-result: |
+    У пользователя должны появиться все товары из категории "smartphones"
+---
+- summary: |
+    Фильтрация товаров по цене
+  requirement: |
+    Пользователь должен иметь возможность фильтровать товары по цене
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    From: 1000
+    To: 2000
+  steps:
+    - Переходим в раздем "Price" на боковой панели
+    - Вводим число 1000 в первую строку
+    - Вводим число 2000 во вторую строку
+  expected-result: |
+    Пользователю предлагают товары цены которых от 1000 до 2000 без учета скидки
+
+- summary: |
+    Фильтрация товаров по цвету
+  requirement: |
+    Пользователь должен иметь возможность фильтровать товары по цвету
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    Красный цвет
+    Черный цвет
+  steps:
+    - Переходим в раздем "Color" на боковой панели
+    - Отмечаем красный и черный цвет
+  expected-result: |
+    Пользователю предлагают товары красного и черного цвета
+
+- summary: |
+    Фильтрация товаров по размеру
+  requirement: |
+    Пользователь должен иметь возможность фильтровать товары по размеру
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    From: 20
+    To: 60
+  steps:
+    - Переходим в раздем "Format" на боковой панели
+    - Вводим число 20 в первую строку
+    - Вводим число 60 во вторую строку
+  expected-result: |
+    Пользователю предлагают товары размер которых от 20 до 60
+---
+- summary: |
+    Возможность просматривать товары
+  requirement: |
+    Пользователь должен иметь возможность просматривать товары.
+  prerequisites: |
+    Открыть страницу https://hexlet-products-store.vercel.app/products/1
+  steps:
+    - Нажимаем на вторую картинку товара
+    - Нажимаем на третью картинку товара
+  expected-result: |
+    Основное окно с картинкой меняется в зависимость от нашего выбора
+
+- summary: |
+    Возможность просматривать подробную информацию о товаре
+  requirement: |
+    Пользователь должен иметь возможность просматривать подробную информацию о товаре.
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  steps:
+    - Открываем  первый товар на сайте (iPhone 9)
+    - В разделе "Description" находится подробная информация о товаре
+  expected-result: |
+    Подробная информация о товаре должна находиться в разделе "Description"
+---
+- summary: |
+    Возможность добавлять товары в корзину
+  requirement: |
+    Пользователь должен иметь возможность добавлять товары в корзину
+  prerequisites: |
+    Открыть страницу https://hexlet-products-store.vercel.app/products/2
+  steps:
+    - Нажимаем на кнопку "Add to cart"
+  expected-result: |
+    Товар добавлен в корзину
+
+- summary: |
+    Просмотр содержимого корзины
+  requirement: |
+    Пользователь должен иметь возможность просматривать содержимое корзины.
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    Должен быть выполнин тест-кейс "Возможность добавлять товары в корзину"
+  steps:
+    - Переходим в "Cart"
+  expected-result: |
+    В корзине должен находиться 1 товар "iPhone X"
+---
+- summary: |
+    Проверка безопасности сайта
+  requirement: |
+    Сайт должен быть безопасным.
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app
+  steps:
+    - Вводим в поисковик сайта следующущее сообщение "<script>alert(123)</script>"
+    - Появляется сообщение "Nothing found!"
+  expected-result: |
+    Сайт безопасен
+
+- summary: |
+    Защита данных пользователей
+  requirement: |
+    Сайт должен защищать данные пользователя.
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app
+  steps:
+    - Вводим в поисковик сайта следующее сообщение "<script>alert(document.cookie)</script>"
+    - Появляется сообщение "Nothing found!"
+  expected-result: |
+    Сайт защищает данные пользователей
+---
+- summary: |
+    Мобильная версия сайта
+  requirement: |
+    Сайт должен иметь мобильную версию.
+  prerequisites: |
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  steps:
+    - Открываем DevTools
+    - На клавиатуре одновременно нажимаем Ctrl+Shift+M
+  expected-result: |
+    Есть мобильная версия сайта
+---
+- summary: |
+    Работа сайта на разных версиях браузеров
+  requirement: |
+    Сайт должен быть протестирован на совместимость с последними версиями браузеров.
+  prerequisites: |
+    Открыть сайт https://cloud.bitbar.com/#testing/dashboard (нужно быть зарегистрированным пользователем)
+  steps:
+    - Нажать на кнопку "Start Browser Test"
+    - Выбрать вкладку "Desktop"
+    - Выбрать Device Name "Windows 10-EU"
+    - Выбрать последнюю вырсию Chrome
+    - В строку "Start with URL" вставить ссылку на интернет магазин (https://hexlet-products-store.vercel.app/)
+    - Выбрать разрешение 1920х1080
+    - Нажать кнопку "Start Test"
+  expected-result: |
+    Сайт работает на новых версиях браузеров
+---
+- summary: |
+    Нагрузка сайта
+  requirement: |
+    Сайт должен быть способен обрабатывать большое количество трафика.
+  prerequisites: |
+    Открыть сайт https://loaddy.com/?ysclid=lcgjoe0adu658436030
+  steps:
+    - В строку для проверки вставить ссылку на главную страницу магазина (https://hexlet-products-store.vercel.app/)
+    - Нажать кнопку "Бесплатная проверка"
+  expected-result: |
+    Сайт выдерживает большое количество трафика
