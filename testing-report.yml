@@ -1,0 +1,58 @@
+testing-report.yml
+
+---
+- summary: |
+    Поиск товара по ключевому слову
+  status: pass
+
+- summary: |
+    Поиск товара по категории
+  status: pass
+---
+- summary: |
+    Фильтрация товаров по цене
+  status: pass
+
+- summary: |
+    Фильтрация товаров по цвету
+  status: fail
+
+- summary: |
+    Фильтрация товаров по размеру
+  status: fail
+---
+- summary: |
+    Возможность просматривать товары
+  status: fail
+
+- summary: |
+    Возможность просматривать подробную информацию о товаре
+  status: pass
+---
+- summary: |
+    Возможность добавлять товары в корзину
+  status: pass
+
+- summary: |
+    Просмотр содержимого корзины
+  status: pass
+---
+- summary: |
+    Проверка безопасности сайта
+  status: pass
+
+- summary: |
+    Защита данных пользователей
+  status: pass
+---
+- summary: |
+    Мобильная версия сайта
+  status: fail
+---
+- summary: |
+    Работа сайта на разных версиях браузеров
+  status: pass
+---
+- summary: |
+    Нагрузка сайта
+  status: pass
