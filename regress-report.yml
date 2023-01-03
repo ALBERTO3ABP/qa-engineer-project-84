@@ -1,0 +1,86 @@
+regress-report.yml
+
+---
+- summary: |
+    Поиск товара по ключевому слову
+  status: pass
+
+- summary: |
+    Поиск товара по категории
+  status: pass
+---
+- summary: |
+    Фильтрация товаров по цене
+  status: pass
+
+- summary: |
+    Фильтрация товаров по цвету
+  status: fail
+
+bugreports:
+- summary: |
+    Фильтрация товаров по цвету
+  environment: |
+    Microsoft Edge 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
+    OC Windows 10 Домашняя 22H2
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта магазина https://hexlet-products-store.vercel.app/
+    2. Влевой панели сайта нет фильтрации по цвету товаров
+  expected-result: |
+    На главной странице сайта будет фильтрация товаров по разному цвету
+  actual-result: |
+    На странице нет фильтрации по цвету
+
+- summary: |
+    Фильтрация товаров по размеру
+  status: fail
+
+bugreports:
+ - summary: |
+    Фильтрация товаров по размеру
+  environment: |
+    Microsoft Edge 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
+    OC Windows 10 Домашняя 22H2
+  steps-to-reproduce: |
+    1. Открыть главную страницу сайта магазина https://hexlet-products-store.vercel.app/
+    2. Влевой панели сайта нет фильтрации по размеру товаров
+  expected-result: |
+    На главной странице сайта будет фильтрация товаров по размеру
+  actual-result: |
+    На странице нет фильтрации по размеру
+---
+- summary: |
+    Возможность просматривать товары
+  status: pass
+
+- summary: |
+    Возможность просматривать подробную информацию о товаре
+  status: pass
+---
+- summary: |
+    Возможность добавлять товары в корзину
+  status: pass
+
+- summary: |
+    Просмотр содержимого корзины
+  status: pass
+---
+- summary: |
+    Проверка безопасности сайта
+  status: pass
+
+- summary: |
+    Защита данных пользователей
+  status: pass
+---
+- summary: |
+    Мобильная версия сайта
+  status: pass
+---
+- summary: |
+    Работа сайта на разных версиях браузеров
+  status: pass
+---
+- summary: |
+    Нагрузка сайта
+  status: pass
