@@ -55,7 +55,7 @@
     Нагрузка сайта
   status: pass
 
-  bugreports:
+bugreports:
   - summary: |
     Фильтрация товаров по цвету
   environment: |
