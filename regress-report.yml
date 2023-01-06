@@ -12,14 +12,6 @@
   status: pass
 
 - summary: |
-    Фильтрация товаров по цвету
-  status: fail
-
-- summary: |
-    Фильтрация товаров по размеру
-  status: fail
-
-- summary: |
     Возможность просматривать товары
   status: pass
 
