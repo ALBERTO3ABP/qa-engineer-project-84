@@ -18,6 +18,8 @@
     Пользователь должен иметь возможность искать товары с помощью категорий.
   prerequisites:
     Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    -
   steps:
     - В разделе "Category" выбрать категорию "smartphones"
   expected-result: |
@@ -76,6 +78,8 @@
     Пользователь должен иметь возможность просматривать товары.
   prerequisites: |
     Открыть страницу https://hexlet-products-store.vercel.app/products/1
+  test-data: |
+    -
   steps:
     - Нажимаем на вторую картинку товара
     - Нажимаем на третью картинку товара
@@ -88,6 +92,8 @@
     Пользователь должен иметь возможность просматривать подробную информацию о товаре.
   prerequisites: |
     Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    -
   steps:
     - Открываем  первый товар на сайте (iPhone 9)
     - В разделе "Description" находится подробная информация о товаре
@@ -100,6 +106,8 @@
     Пользователь должен иметь возможность добавлять товары в корзину
   prerequisites: |
     Открыть страницу https://hexlet-products-store.vercel.app/products/2
+  test-data: |
+    -
   steps:
     - Нажимаем на кнопку "Add to cart"
   expected-result: |
@@ -124,6 +132,8 @@
     Сайт должен быть безопасным.
   prerequisites: |
     Открыть главную страницу сайта https://hexlet-products-store.vercel.app
+  test-data: |
+    -
   steps:
     - Вводим в поисковик сайта следующущее сообщение "<script>alert(123)</script>"
     - Появляется сообщение "Nothing found!"
@@ -136,6 +146,8 @@
     Сайт должен защищать данные пользователя.
   prerequisites: |
     Открыть главную страницу сайта https://hexlet-products-store.vercel.app
+  test-data: |
+    -
   steps:
     - Вводим в поисковик сайта следующее сообщение "<script>alert(document.cookie)</script>"
     - Появляется сообщение "Nothing found!"
@@ -148,6 +160,8 @@
     Сайт должен иметь мобильную версию.
   prerequisites: |
     Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+  test-data: |
+    -
   steps:
     - Открываем DevTools
     - На клавиатуре одновременно нажимаем Ctrl+Shift+M
@@ -160,6 +174,8 @@
     Сайт должен быть протестирован на совместимость с последними версиями браузеров.
   prerequisites: |
     Открыть сайт https://cloud.bitbar.com/#testing/dashboard (нужно быть зарегистрированным пользователем)
+  test-data: |
+    -
   steps:
     - Нажать на кнопку "Start Browser Test"
     - Выбрать вкладку "Desktop"
@@ -177,6 +193,8 @@
     Сайт должен быть способен обрабатывать большое количество трафика.
   prerequisites: |
     Открыть сайт https://loaddy.com/?ysclid=lcgjoe0adu658436030
+  test-data: |
+    -
   steps:
     - В строку для проверки вставить ссылку на главную страницу магазина (https://hexlet-products-store.vercel.app/)
     - Нажать кнопку "Бесплатная проверка"
