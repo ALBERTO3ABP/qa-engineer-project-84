@@ -1,5 +1,3 @@
-testing-report.yml
-
 ---
 - summary: |
     Поиск товара по ключевому слову
@@ -8,7 +6,7 @@ testing-report.yml
 - summary: |
     Поиск товара по категории
   status: pass
----
+
 - summary: |
     Фильтрация товаров по цене
   status: pass
@@ -20,7 +18,7 @@ testing-report.yml
 - summary: |
     Фильтрация товаров по размеру
   status: fail
----
+
 - summary: |
     Возможность просматривать товары
   status: fail
@@ -28,7 +26,7 @@ testing-report.yml
 - summary: |
     Возможность просматривать подробную информацию о товаре
   status: pass
----
+
 - summary: |
     Возможность добавлять товары в корзину
   status: pass
@@ -36,7 +34,7 @@ testing-report.yml
 - summary: |
     Просмотр содержимого корзины
   status: pass
----
+
 - summary: |
     Проверка безопасности сайта
   status: pass
@@ -44,15 +42,15 @@ testing-report.yml
 - summary: |
     Защита данных пользователей
   status: pass
----
+
 - summary: |
     Мобильная версия сайта
   status: fail
----
+
 - summary: |
     Работа сайта на разных версиях браузеров
   status: pass
----
+
 - summary: |
     Нагрузка сайта
   status: pass
