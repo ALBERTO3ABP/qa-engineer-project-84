@@ -55,8 +55,8 @@
     Нагрузка сайта
   status: pass
 
-bugreports:
-  - summary: |
+- bugreports:
+  summary: |
     Фильтрация товаров по цвету
   environment: |
     Microsoft Edge 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
@@ -69,7 +69,7 @@ bugreports:
   actual-result: |
     На странице нет фильтрации по цвету
 
-  - summary: |
+  summary: |
     Фильтрация товаров по размеру
   environment: |
     Microsoft Edge 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
