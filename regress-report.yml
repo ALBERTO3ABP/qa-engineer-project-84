@@ -54,7 +54,7 @@
 - summary: |
     Нагрузка сайта
   status: pass
----
+
 bugreports:
   - summary: |
     Фильтрация товаров по цвету
