@@ -17,9 +17,8 @@ bugreports: []
 - summary: |
     Фильтрация товаров по цвету
   status: fail
-
 bugreports:
-- summary: |
+  - summary: |
     Фильтрация товаров по цвету
   environment: |
     Microsoft Edge 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
@@ -35,7 +34,6 @@ bugreports:
 - summary: |
     Фильтрация товаров по размеру
   status: fail
-
 bugreports:
  - summary: |
     Фильтрация товаров по размеру
