@@ -1,9 +1,10 @@
 about.yml
 ---
- name: Albert Azaryan # Имя
- email: azaryan54@gmail.com
- description: |
-   Учусь на медбрата.
- skills: # Мои навыки
-   - Лентяй
-   - Могу пройти скайрим за 2 часа)
+name: Albert Azaryan # Имя
+email: azaryan54@gmail.com
+description: |
+  Учусь на медбрата.
+skills: # Мои навыки
+  - Лентяй
+  - Игроман
+  - Могу пройти скайрим за 2 часа)
