@@ -1,9 +1,11 @@
-about.yml
 ---
- name: Albert Azaryan # Имя
- email: azaryan54@gmail.com
- description: |
-   Учусь на медбрата.
- skills: # Мои навыки
-   - Лентяй
-   - Могу пройти скайрим за 2 часа)
+name: Albert Azaryan # ваше имя
+job: QA Engineer
+level: junior
+email: Azaryan54@gmail.com
+description: |
+  Учусь на медбрата.
+skills: # список навыков в виде списка, напишите что-то свое
+  - Знание английского на 0м уровне.
+  - Слепая печать
+  - Могу пройти скайрим за 2 часа
