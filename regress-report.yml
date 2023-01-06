@@ -3,17 +3,14 @@
     Поиск товара по ключевому слову
   status: pass
 bugreports: []
-
 - summary: |
     Поиск товара по категории
   status: pass
 bugreports: []
-
 - summary: |
     Фильтрация товаров по цене
   status: pass
 bugreports: []
-
 - summary: |
     Фильтрация товаров по цвету
   status: fail
@@ -30,7 +27,6 @@ bugreports:
     На главной странице сайта будет фильтрация товаров по разному цвету
   actual-result: |
     На странице нет фильтрации по цвету
-
 - summary: |
     Фильтрация товаров по размеру
   status: fail
@@ -47,47 +43,38 @@ bugreports:
     На главной странице сайта будет фильтрация товаров по размеру
   actual-result: |
     На странице нет фильтрации по размеру
-
 - summary: |
     Возможность просматривать товары
   status: pass
 bugreports: []
-
 - summary: |
     Возможность просматривать подробную информацию о товаре
   status: pass
 bugreports: []
-
 - summary: |
     Возможность добавлять товары в корзину
   status: pass
 bugreports: []
-
 - summary: |
     Просмотр содержимого корзины
   status: pass
 bugreports: []
-
 - summary: |
     Проверка безопасности сайта
   status: pass
 bugreports: []
-
 - summary: |
     Защита данных пользователей
   status: pass
 bugreports: []
-
 - summary: |
     Мобильная версия сайта
   status: pass
 bugreports: []
-
 - summary: |
     Работа сайта на разных версиях браузеров
   status: pass
 bugreports: []
-
 - summary: |
     Нагрузка сайта
   status: pass
