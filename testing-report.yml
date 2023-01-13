@@ -36,21 +36,9 @@
   status: pass
 
 - summary: |
-    Проверка безопасности сайта
-  status: pass
-
-- summary: |
-    Защита данных пользователей
-  status: pass
-
-- summary: |
     Мобильная версия сайта
   status: fail
 
 - summary: |
     Работа сайта на разных версиях браузеров
-  status: pass
-
-- summary: |
-    Нагрузка сайта
   status: pass
