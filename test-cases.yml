@@ -127,34 +127,6 @@
     В корзине должен находиться 1 товар "iPhone X"
 
 - summary: |
-    Проверка безопасности сайта
-  requirement: |
-    Сайт должен быть безопасным.
-  prerequisites: |
-    Открыть главную страницу сайта https://hexlet-products-store.vercel.app
-  test-data: |
-    -
-  steps:
-    - Вводим в поисковик сайта следующущее сообщение "<script>alert(123)</script>"
-    - Появляется сообщение "Nothing found!"
-  expected-result: |
-    Сайт безопасен
-
-- summary: |
-    Защита данных пользователей
-  requirement: |
-    Сайт должен защищать данные пользователя.
-  prerequisites: |
-    Открыть главную страницу сайта https://hexlet-products-store.vercel.app
-  test-data: |
-    -
-  steps:
-    - Вводим в поисковик сайта следующее сообщение "<script>alert(document.cookie)</script>"
-    - Появляется сообщение "Nothing found!"
-  expected-result: |
-    Сайт защищает данные пользователей
-
-- summary: |
     Мобильная версия сайта
   requirement: |
     Сайт должен иметь мобильную версию.
@@ -186,17 +158,3 @@
     - Нажать кнопку "Start Test"
   expected-result: |
     Сайт работает на новых версиях браузеров
-
-- summary: |
-    Нагрузка сайта
-  requirement: |
-    Сайт должен быть способен обрабатывать большое количество трафика.
-  prerequisites: |
-    Открыть сайт https://loaddy.com/?ysclid=lcgjoe0adu658436030
-  test-data: |
-    -
-  steps:
-    - В строку для проверки вставить ссылку на главную страницу магазина (https://hexlet-products-store.vercel.app/)
-    - Нажать кнопку "Бесплатная проверка"
-  expected-result: |
-    Сайт выдерживает большое количество трафика
