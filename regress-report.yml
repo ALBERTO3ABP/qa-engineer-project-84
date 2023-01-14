@@ -13,7 +13,7 @@ test-cases:
     status: pass
 
   - summary: |
-      Возможность просматривать товары
+      Возможность просмотреть изображение товара
     status: pass
 
   - summary: |
